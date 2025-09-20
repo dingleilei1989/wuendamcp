@@ -196,4 +196,4 @@ Please present both detailed information about each paper and a high-level synth
 
 if __name__ == "__main__":
     # Initialize and run the server
-    mcp.run(transport="streamable-http")
+    mcp.run(transport="stdio")
