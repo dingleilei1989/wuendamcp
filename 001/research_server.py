@@ -5,7 +5,7 @@ from typing import List
 from dotenv import load_dotenv
 import openai
 
-PAPER_DIR = "papers"
+PAPER_DIR = "../papers"
 
 
 def search_papers(topic: str, max_results: int = 1) -> List[str]:
