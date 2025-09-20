@@ -1,0 +1,23 @@
+{
+  "2203.00502v1": {
+    "title": "Sensor technologies in cancer research for new directions in diagnosis and treatment: and exploratory analysis",
+    "authors": [
+      "Mario Coccia",
+      "Saeed Roshani",
+      "Melika Mosleh"
+    ],
+    "summary": "The goal of this study is an exploratory analysis concerning main sensor\ntechnologies applied in cancer research to detect new directions in diagnosis\nand treatments. The study focused on types of cancer having a high incidence\nand mortality worldwide: breast, lung, colorectal and prostate. Data of the Web\nof Science (WOS) core collection database are used to retrieve articles related\nto sensor technologies and cancer research over 1991-2021 period. We utilized\nGephi software version 0.9.2 to visualize the co-word networks of the\ninteraction between sensor technologies and cancers under study. Results show\nmain clusters of interaction per typology of cancer. Biosensor is the only type\nof sensor that plays an essential role in all types of cancer: breast cancer,\nlung cancer, prostate cancer, and colorectal cancer. Electrochemical sensor is\napplied in all types of cancer under study except lung cancer. Electrochemical\nbiosensor is used in breast cancer, lung cancer, and prostate cancer research\nbut not colorectal cancer. Optical sensor can also be considered one of the\nsensor technologies that significantly is used in breast cancer, prostate\ncancer, and colorectal cancer. This study shows that this type of sensor is\napplied in more diversified approaches. Moreover, the oxygen sensor is mostly\nstudied in lung cancer and breast cancer due to the usage in breath analysis\nfor the treatment process. Finally, Cmos sensor is a technology used mainly in\nlung cancer and colorectal cancer. Results here suggest new directions for the\nevolution of science and technology of sensors in cancer research to support\ninnovation and research policy directed to new technological trajectories\nhaving a potential of accelerated growth and positive social impact for\ndiagnosis and treatments of cancer.",
+    "pdf_url": "http://arxiv.org/pdf/2203.00502v1",
+    "published": "2022-02-04"
+  },
+  "1612.09478v1": {
+    "title": "Discovery of cancer common and specific driver gene sets",
+    "authors": [
+      "Junhua Zhang",
+      "Shihua Zhang"
+    ],
+    "summary": "Cancer is known as a disease mainly caused by gene alterations. Discovery of\nmutated driver pathways or gene sets is becoming an important step to\nunderstand molecular mechanisms of carcinogenesis. However, systematically\ninvestigating commonalities and specificities of driver gene sets among\nmultiple cancer types is still a great challenge, but this investigation will\nundoubtedly benefit deciphering cancers and will be helpful for personalized\ntherapy and precision medicine in cancer treatment. In this study, we propose\ntwo optimization models to \\emph{de novo} discover common driver gene sets\namong multiple cancer types (ComMDP) and specific driver gene sets of one\ncertain or multiple cancer types to other cancers (SpeMDP), respectively. We\nfirst apply ComMDP and SpeMDP to simulated data to validate their efficiency.\nThen, we further apply these methods to 12 cancer types from The Cancer Genome\nAtlas (TCGA) and obtain several biologically meaningful driver pathways. As\nexamples, we construct a common cancer pathway model for BRCA and OV, infer a\ncomplex driver pathway model for BRCA carcinogenesis based on common driver\ngene sets of BRCA with eight cancer types, and investigate specific driver\npathways of the liquid cancer lymphoblastic acute myeloid leukemia (LAML)\nversus other solid cancer types. In these processes more candidate cancer genes\nare also found.",
+    "pdf_url": "http://arxiv.org/pdf/1612.09478v1",
+    "published": "2016-12-30"
+  }
+}

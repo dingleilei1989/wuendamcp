@@ -1,0 +1,39 @@
+{
+  "2102.01522v3": {
+    "title": "If Loud Aliens Explain Human Earliness, Quiet Aliens Are Also Rare",
+    "authors": [
+      "Robin Hanson",
+      "Daniel Martin",
+      "Calvin McCarter",
+      "Jonathan Paulson"
+    ],
+    "summary": "If life on Earth had to achieve n 'hard steps' to reach humanity's level,\nthen the chance of this event rose as time to the n-th power. Integrating this\nover habitable star formation and planet lifetime distributions predicts >99%\nof advanced life appears after today, unless n<3 and max planet duration\n<50Gyr. That is, we seem early. We offer this explanation: a deadline is set by\n'loud' aliens who are born according to a hard steps power law, expand at a\ncommon rate, change their volumes' appearances, and prevent advanced life like\nus from appearing in their volumes. 'Quiet' aliens, in contrast, are much\nharder to see. We fit this three-parameter model of loud aliens to data: 1)\nbirth power from the number of hard steps seen in Earth history, 2) birth\nconstant by assuming a inform distribution over our rank among loud alien birth\ndates, and 3) expansion speed from our not seeing alien volumes in our sky. We\nestimate that loud alien civilizations now control 40-50% of universe volume,\neach will later control ~10^5 - 3x10^7 galaxies, and we could meet them in\n~200Myr - 2Gyr. If loud aliens arise from quiet ones, a depressingly low\ntransition chance (~10^-4) is required to expect that even one other quiet\nalien civilization has ever been active in our galaxy. Which seems bad news for\nSETI. But perhaps alien volume appearances are subtle, and their expansion\nspeed lower, in which case we predict many long circular arcs to find in our\nsky.",
+    "pdf_url": "http://arxiv.org/pdf/2102.01522v3",
+    "published": "2021-02-01"
+  },
+  "cs/0306071v1": {
+    "title": "AliEnFS - a Linux File System for the AliEn Grid Services",
+    "authors": [
+      "Andreas J. Peters",
+      "P. Saiz",
+      "P. Buncic"
+    ],
+    "summary": "Among the services offered by the AliEn (ALICE Environment\nhttp://alien.cern.ch) Grid framework there is a virtual file catalogue to allow\ntransparent access to distributed data-sets using various file transfer\nprotocols. $alienfs$ (AliEn File System) integrates the AliEn file catalogue as\na new file system type into the Linux kernel using LUFS, a hybrid user space\nfile system framework (Open Source http://lufs.sourceforge.net). LUFS uses a\nspecial kernel interface level called VFS (Virtual File System Switch) to\ncommunicate via a generalised file system interface to the AliEn file system\ndaemon. The AliEn framework is used for authentication, catalogue browsing,\nfile registration and read/write transfer operations. A C++ API implements the\ngeneric file system operations. The goal of AliEnFS is to allow users easy\ninteractive access to a worldwide distributed virtual file system using\nfamiliar shell commands (f.e. cp,ls,rm ...) The paper discusses general aspects\nof Grid File Systems, the AliEn implementation and present and future\ndevelopments for the AliEn Grid File System.",
+    "pdf_url": "http://arxiv.org/pdf/cs/0306071v1",
+    "published": "2003-06-13"
+  },
+  "physics/0306103v1": {
+    "title": "AliEn - EDG Interoperability in ALICE",
+    "authors": [
+      "S. Bagnasco",
+      "R. Barbera",
+      "P. Buncic",
+      "F. Carminati",
+      "P. Cerello",
+      "P. Saiz"
+    ],
+    "summary": "AliEn (ALICE Environment) is a GRID-like system for large scale job\nsubmission and distributed data management developed and used in the context of\nALICE, the CERN LHC heavy-ion experiment. With the aim of exploiting upcoming\nGrid resources to run AliEn-managed jobs and store the produced data, the\nproblem of AliEn-EDG interoperability was addressed and an in-terface was\ndesigned. One or more EDG (European Data Grid) User Interface machines run the\nAliEn software suite (Cluster Monitor, Storage Element and Computing Element),\nand act as interface nodes between the systems. An EDG Resource Broker is seen\nby the AliEn server as a single Computing Element, while the EDG storage is\nseen by AliEn as a single, large Storage Element; files produced in EDG sites\nare registered in both the EDG Replica Catalogue and in the AliEn Data\nCatalogue, thus ensuring accessibility from both worlds. In fact, both\nregistrations are required: the AliEn one is used for the data management, the\nEDG one to guarantee the integrity and access to EDG produced data. A prototype\ninterface has been successfully deployed using the ALICE AliEn Server and the\nEDG and DataTAG Testbeds.",
+    "pdf_url": "http://arxiv.org/pdf/physics/0306103v1",
+    "published": "2003-06-13"
+  }
+}
