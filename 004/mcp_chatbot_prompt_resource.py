@@ -1,3 +1,5 @@
+import traceback
+
 from dotenv import load_dotenv
 import openai
 from mcp import ClientSession, StdioServerParameters
@@ -54,24 +56,43 @@ class MCP_ChatBot:
                     })
 
                 # List available prompts
-                prompts_response = await session.list_prompts()
-                if prompts_response and prompts_response.prompts:
-                    for prompt in prompts_response.prompts:
-                        self.sessions[prompt.name] = session
-                        self.available_prompts.append({
-                            "name": prompt.name,
-                            "description": prompt.description,
-                            "arguments": prompt.arguments
-                        })
+                    # 尝试使用 list_prompts() 方法（某些MCP实现）
+                try:
+                    prompts_response = await session.list_prompts()
+                    if prompts_response and prompts_response.prompts:
+                        for prompt in prompts_response.prompts:
+                            self.sessions[prompt.name] = session
+                            self.available_prompts.append({
+                                "name": prompt.name,
+                                "description": prompt.description,
+                                "arguments": prompt.arguments
+                            })
+                except Exception as e:
+                    # Handle the case where list_prompts method is not implemented by the server
+                    if "Method not found" in str(e):
+                        print(f"Warning: list_prompts method not implemented by the server {tool.name}")
+                    else:
+                        print(f"Error listing prompts: {e}")
+                    # Continue execution even if prompts are not available
                 # List available resources
-                resources_response = await session.list_resources()
-                if resources_response and resources_response.resources:
-                    for resource in resources_response.resources:
-                        resource_uri = str(resource.uri)
-                        self.sessions[resource_uri] = session
+                try:
+                    resources_response = await session.list_resources()
+                    if resources_response and resources_response.resources:
+                        for resource in resources_response.resources:
+                            resource_uri = str(resource.uri)
+                            self.sessions[resource_uri] = session
+                except Exception as e:
+                    # Handle the case where list_prompts method is not implemented by the server
+                    if "Method not found" in str(e):
+                        print(f"Warning: list_resources method not implemented by the server {tool.name}")
+                    else:
+                        print(f"Error listing resources: {e}")
+                    # Continue execution even if prompts are not available
 
             except Exception as e:
                 print(f"Error {e}")
+                stack_str = traceback.format_exc()  # 返回字符串
+                print(f"Error occurred:{stack_str}")
 
         except Exception as e:
             print(f"Error connecting to {server_name}: {e}")
