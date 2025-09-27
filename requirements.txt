@@ -2,3 +2,5 @@ arxiv
 openai
 python-dotenv
 mcp
+flask
+requests
